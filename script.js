@@ -18,17 +18,17 @@ const Weather = async () => {
         City.value = '';
         if (data.main.temp <20 && data.main.temp>0)
         {
-            const rain = './images/rain.png';
+            const rain = './rain.png';
             let Degimg = document.getElementById('degimg');
             Degimg.innerHTML=`<img src=${rain}/>`
         }
         else if (data.main.temp < 0) {
-            const snow = './images/snow.png';
+            const snow = './snow.png';
             let Degimg1 = document.getElementById('degimg');
             Degimg1.innerHTML=`<img src=${snow}/>`
         }
         else {
-            const cloud = './images/clouds.png';
+            const cloud = './clouds.png';
             let Degimg2 = document.getElementById('degimg');
             Degimg2.innerHTML=`<img src=${cloud}/>`
         }
